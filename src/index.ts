@@ -2,4 +2,4 @@
 // for example:
 // export * from './decorators';
 export * from './test';
-export {CategorySchema} from './models/category'
+export { Category, Cat } from './entity/category.entity'
