@@ -2,4 +2,4 @@
 // for example:
 // export * from './decorators';
 export * from './test';
-export { Category, Cat } from './entity/category.entity'
+export * from './entity/category.entity'
