@@ -41,8 +41,3 @@ export class Category {
     @Column()
     status: boolean
 }
-
-@Entity()
-export class Cat extends Category {
-    description:string
-}
