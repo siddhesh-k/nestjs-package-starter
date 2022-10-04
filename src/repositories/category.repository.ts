@@ -1,17 +1,17 @@
 import { Category } from '../entity/category.entity';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
+import { MongoRepository } from 'typeorm';
 import { CreateCategoryDto, UpdateCategoryDto } from '../dtos/category.dto';
 
 
 export { Category } from '../entity/category.entity';
 
 @Injectable()
-export class CategoryRepository extends Repository<Category> {
+export class CategoryRepository extends MongoRepository<Category> {
 
     public async findAll(): Promise<Category[]> {
-        return await this.find({});
+        return await this.findAll();
     }
 
     public async findById(categoryId): Promise<Category> {
